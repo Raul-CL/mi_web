@@ -15,14 +15,15 @@ ff3874
 }
 body{
   display: grid;
+  min-height: 100vh;
   background-color: #EDEDED;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 80% 10% ;
+  grid-template-rows: 4em 1fr 3em;
   grid-template-areas: 
   "header"
   "main"
   "footer";
-  min-height: 100vh;
+  
 }
 
 /*! START HEADER  */
@@ -34,7 +35,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 3em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +71,6 @@ footer {
   font-weight: bold;
   font-size: 1em;
   width: 100%;
-  height: auto;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -495,10 +494,12 @@ footer {
 }
 /*! 480px--> Movil Horizontal  */
 @media screen and (max-width: 480px){
+  body{
+    grid-template-rows: 6em 1fr 5em;
+  }
   header{
     font-size: 1em;
     flex-direction: column;
-    height: auto;
     padding: .5em 0em;
     
    }
@@ -516,7 +517,6 @@ footer {
    }
    footer{
      flex-direction: column;
-     height: auto;
    }
    .foot__icons{
      text-align: center;
