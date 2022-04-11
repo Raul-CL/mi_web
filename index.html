@@ -20,7 +20,8 @@
     <!--? Start Header -->
     <header>
       <a href="index.html" class="nav__img"><img src="./img/logoipsum-logo-34.svg" ></a>
-      <nav >
+      <!--!NavBar normal >320px  -->
+      <nav id="navBar">
         <ul class="nav__list">
           <li class="nav__list__item">
             <a href="index.html" class="nav__list__item__link">Inicio</a>
@@ -39,6 +40,34 @@
           </li>
         </ul>
       </nav>
+      <!--! NavBar Hamburguesa <320px  -->
+        <nav class="navbar navbar-dark" id="navBar__bootstrap">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a href="index.html" class="nav__list__item__link">Inicio</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="services.html" class="nav__list__item__link">Servicios</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="gallery.html" class="nav__list__item__link">Galeria</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="contact_us.html" class="nav__list__item__link">Contactanos</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="about_us.html" class="nav__list__item__link">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+       
     </header>
     <!--? End Header  -->
     <!--? Start Body -->

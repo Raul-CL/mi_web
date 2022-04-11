@@ -39,6 +39,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+#navBar__bootstrap{
+  display: none;
+}
+
 .nav__img{
   width: 20%;
   text-align: center;
@@ -50,6 +54,7 @@ nav{
   display: flex;
   list-style: none;
   justify-content: space-around;
+  margin-bottom: 0px;
 }
 .nav__list__item__link{
   color: #DA0037;
@@ -501,8 +506,6 @@ footer {
   header{
     font-size: 1em;
     flex-direction: column;
-    padding: .5em 0em;
-    
    }
    .nav__img{
      width: 100%;
@@ -602,15 +605,29 @@ footer {
  /*!320px--> Movil Vertical  */ 
 @media screen and (max-width: 320px)  { 
  header{
-   height: auto;
-   margin-bottom: 2em;
+  flex-direction: row;
+  flex-wrap: wrap;
  }
  nav{
    height: auto;
    margin: .5em;
  }
+ #navBar__bootstrap{
+   width: 25%;
+   display: inline;
+ }
+ 
+ #navbarToggleExternalContent{
+   width: 100%;
+   
+ }
+ #navBar{
+   /*? Se oculta navbar normal y agrega la de bootstrap  */
+   display: none;
+ }
  .nav__img{
    height: auto;
+   width: 60%;
  }
  .nav__list{
    flex-direction: column;
